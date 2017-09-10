@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+    <script>
+        /**
+         * 数组模拟栈的方法.栈是一种后进先出的数据结构,所有应该有压入栈和弹出栈的方法
+         */
+        var arr1 = new Array();
+        var arr2 = new Array("AA", "BB", "CC");
+        var arr3 = ["甲", "乙", "丙", "丁"];
+
+        /**
+         * push:压入,像数组末端添加项,可以压如一项或者多项
+         */
+        arr2.push("HELLO");
+        console.log("arr2 : " + arr2);
+        arr2.push("DANNY", "JERRY");
+        console.log("arr2 : " + arr2);
+
+        /**
+         * pop:弹出,取得最后一项
+         */
+        var ele = arr3.pop();
+        console.log(ele);
+
+        /**
+         * 队列方法,队列是一种先进先出的数据结构.所以有从尾部插入,从头部离开的方法
+         */
+
+        //shift:移除数组中的第一项,并且返回该项
+        var first = arr3.shift();
+        console.log(first);
+
+        //unshift:在数组的前端添加任意项,并返回数组的长度
+        var arr4 = ["甲", "乙", "丙", "丁"];
+        console.log("arr3.length : " + arr4.length);
+        var count = arr4.unshift("xiao", "haha");
+        console.log("arr4 length : " + count + "    arr4 : " + arr4);
+
+        /**
+         * 重排序方法:reverse,sort
+         */
+
+
+        //reverse:反转数组的顺序,reverse只是单纯的倒转顺序,并不会重新排序.
+        var sortArr = [1, 3, 5, 8, 9];
+        sortArr.reverse();
+        console.log(sortArr);
+
+        var strArr = ["飞机", "火箭", "坦克", "导弹"];
+        strArr.reverse();
+        console.log(strArr);
+
+        var sortArr1 = [1, 5, 12, 2, 21];
+        console.log("before : " + sortArr1);
+        sortArr1.reverse();
+        console.log("after : " + sortArr1);
+
+        //sort:排序:sort对汉字的排序应该是用ASC码来排序的
+        var sortArr2 = [1, 5, 12, 2, 21];
+        sortArr2.sort();
+        console.log(sortArr2);
+
+        var strArr1 = ["我", "箭", "坦", "导"];
+        strArr1.sort();
+        console.log(strArr1);
+        
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
